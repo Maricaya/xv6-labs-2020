@@ -54,7 +54,9 @@ struct dinode {
 #define DIRSIZ 14
 
 struct dirent {
+  //  存储目录项对应文件的索引节点号（inode number）。
   ushort inum;
+  // 存储目录项的文件名。
   char name[DIRSIZ];
 };
 
